@@ -21,7 +21,7 @@ class RelinkUnlinkedEntries(QObject):
         def displayed_text(x):
             return Translations.format(
                 "entries.unlinked.relink.attempting",
-                index=x,
+                index=x + 2,
                 unlinked_count=self.tracker.unlinked_entries_count,
                 fixed_count=self.tracker.files_fixed_count,
             )
